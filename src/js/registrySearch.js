@@ -26,16 +26,10 @@ parseUrlParams();
 
 if (pathName.includes("registry")) {
   // Run search or display default body
-  if (searchQuery) {
     document.querySelector("#search-query").value = searchQuery;
     document.querySelector("#default-body").style.display = "none";
     executeSearch(searchQuery);
-  } else {
-    let defaultBody = document.querySelector("#default-body");
-    if (defaultBody.style.display === "none") {
-      defaultBody.style.display = "block";
-    }
-  }
+
 
   if (selectedLanguage!=="all" || selectedComponent!== "all"){
     if (selectedLanguage!=="all"){
@@ -54,7 +48,10 @@ function executeSearch(searchQuery) {
     .then((res) => res.json())
     .then((json) => {
       let fuse = new Fuse(json, fuseOptions);
-      let results = fuse.search(searchQuery);
+      let results = json.map(item=>({item}));
+      if (searchQuery){
+        results = fuse.search(searchQuery);
+      }
 
       if (results.length > 0) {
         populateResults(results);

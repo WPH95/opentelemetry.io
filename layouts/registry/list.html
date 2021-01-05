@@ -35,7 +35,7 @@
 <div class="td-content">
   <section class="row pb-5">
     <div class="col align-self-center">
-      <form action="{{ "/registry" | absURL }}" id="searchForm">
+      <form action="{{ "/registry" | absLangURL }}" id="searchForm">
         <div class="input-group">
           <div class="input-group-prepend">
             <span class="input-group-text" id="basic-addon1">Search</span>
@@ -45,7 +45,7 @@
           <input type="hidden" name="language" id="input-language" value="" />
 
           <div class="input-group-append">
-            <button type="button" class="btn btn-outline-success" onclick="document.getElementById('searchForm').submit();">Submit</button>
+            <button type="button" class="btn btn-outline-success" onclick="document.getElementById('searchForm').submit();">{{ i18n "Submit" }}</button>
             <button type="button" class="btn btn-outline-danger"  onclick="document.getElementById('search-query').value = ''; document.getElementById('input-language').value = 'all';document.getElementById('input-component').value = 'all';document.getElementById('searchForm').submit();">Reset</button>
             <div>
               <button class="btn btn-outline-secondary dropdown-toggle" id="languageDropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</button>

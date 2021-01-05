@@ -1,6 +1,6 @@
 ---
-Title: "About"
-linkTitle: About
+Title: "关于"
+linkTitle: 关于
 menu:
   main:
     weight: 10

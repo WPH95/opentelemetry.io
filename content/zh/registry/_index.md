@@ -1,5 +1,5 @@
 ---
-title: "Registry"
+title: "注册中心"
 outputs:
   - html
   - json
