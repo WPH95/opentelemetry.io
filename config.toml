@@ -44,6 +44,13 @@ description = "The OpenTelemetry Project Site"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
+[languages.zh]
+title = "OpenTelemetry"
+description = "OpenTelemetry 官方网站"
+languageName ="中文"
+# Weight used for sorting.
+contentDir = "content/zh"
+weight = 2
 
 [markup]
   [markup.goldmark]
@@ -158,10 +165,16 @@ enable = false
 	icon = "fas fa-chart-area"
         desc = "See our activity on CNCF DevStats"
 
-[[menu.main]]
+[[languages.en.menu.main]]
     name = "Blog"
     weight = 50
     url = "https://medium.com/opentelemetry"
+
+[[languages.zh.menu.main]]
+    name = "博客"
+    weight = 50
+    url = "https://medium.com/opentelemetry"
+
 
 
 [params.logos]
