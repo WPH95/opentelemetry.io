@@ -44,6 +44,13 @@ description = "The OpenTelemetry Project Site"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
+[languages.zh]
+title = "OpenTelemetry"
+description = "OpenTelemetry 官方网站"
+languageName ="中文"
+# Weight used for sorting.
+contentDir = "content/zh"
+weight = 2
 
 [markup]
   [markup.goldmark]
@@ -163,6 +170,11 @@ enable = false
     weight = 50
     url = "https://medium.com/opentelemetry"
 
+[[languages.zh.menu.main]]
+	name = "博客"
+	weight = 50
+	url = "https://medium.com/opentelemetry"
+
 
 [params.logos]
 hero = "opentelemetry-horizontal-color.png"
@@ -203,3 +215,6 @@ name = "Noto Sans"
 sizes = [300,400,600,700]
 type = "sans_serif"
 
+
+[[params.zh]]
+copyright = "The OpenTelemetry 作者"

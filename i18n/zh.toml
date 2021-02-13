@@ -1,0 +1,13 @@
+
+
+# reigistry page
+[Submit]
+other = "提交"
+[Reset]
+other = "重置"
+[Search]
+other = "搜索"
+
+# doc page
+[post_create_child_page]
+other = "添加子页面"
